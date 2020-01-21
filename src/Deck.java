@@ -12,7 +12,7 @@ public class Deck {
       private Card abe;
       private Card kat;
       private Card sortePer;
-	
+//	a
 	public Deck() {
 		Cards = new ArrayList<Card>();
 		
