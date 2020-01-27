@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Deck {
 	
-	public static List<Card> Cards;
+	public List<Card> Cards;
 	
 	
 	  private Card haj;
@@ -12,7 +12,7 @@ public class Deck {
       private Card abe;
       private Card kat;
       private Card sortePer;
-//	a
+
 	public Deck() {
 		Cards = new ArrayList<Card>();
 		
@@ -26,13 +26,25 @@ public class Deck {
 	     {
 			
 			 Cards.add(haj);
-			 Cards.add(ko);
-			 Cards.add(kylling);
-			 Cards.add(abe);
-			 Cards.add(kat);
+			 Cards.add(Cards.size(),ko);
+			 Cards.add(Cards.size(),kylling);
+			 Cards.add(Cards.size(),abe);
+			 Cards.add(Cards.size(),kat);
 	     }
 		 Cards.add(sortePer);
+
+//testmethod();
 //		 deal.Shuffle(Cards)";
 	}
+//	public void testmethod()
+//	{
+//		int i =0;
+//		for (Card card: Cards) {
+//			System.out.print(card.getName() + " Indexofcard:" + i + "\n");
+//			i++;
+//
+//		}
+//	}
+
 	
 }
