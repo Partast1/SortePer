@@ -18,6 +18,7 @@ public class Participant {
 	public Participant() {
 		hand = new ArrayList<Card>();
 	}
+
 // Checks for duplicates.. all duplicates are added to the tempHand list
 //	The tempHand is comparied to the hand.. duplicates removed.
 	public void CheckDuplicate() {

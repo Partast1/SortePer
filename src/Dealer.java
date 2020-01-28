@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 public class Dealer {
 
-//	Deck deck = new Deck();
-	public List<Card> decklist;
+
+	private List<Card> decklist;
 	Participant player;
 	Participant computer;
-	List<Participant> participants;
+	private List<Participant> participants;
 
 	
 	public Dealer() {
@@ -24,6 +24,7 @@ public class Dealer {
 		decklist = new ArrayList<Card>();
 		
 	}
+//	Shuffles deck
 	public void Shuffle(List<Card> cards) {
 
 		  Collections.shuffle(cards);
@@ -53,7 +54,7 @@ public class Dealer {
 				p2.hand.add(decklist.get(index));
 			}
 	}
-
+//	Starts game, and controls the turns
 	public void StartGame() {
 		for (Card card: player.hand)
 		{
@@ -79,7 +80,7 @@ public class Dealer {
                 player.CheckDuplicate();
                 computer.CheckDuplicate();
                 Random rnd = new Random();
-                int comInput = rnd.nextInt(player.hand.size());
+
 
 
                 System.out.print("\n Choose a card between 1-" + (computer.hand.size() - 1));
@@ -96,20 +97,10 @@ public class Dealer {
                 player.CheckDuplicate();
                 computer.CheckDuplicate();
 
-				if (0 < player.hand.size() || 0 < computer.hand.size()) {
+				int comInput = rnd.nextInt(player.hand.size());
 					computer.TakeCard(player.GiveCard(comInput));
 					player.hand.remove(comInput);
-				}
-				else
-					{
-						if (player.hand.size() > computer.hand.size()){
-							System.out.print("Computer have won!");
-						}
-						else{
-							System.out.print("Player have won!");
-						}
-						gameWon = false;
-					}
+
 
             }
 

@@ -33,18 +33,7 @@ public class Deck {
 	     }
 		 Cards.add(sortePer);
 
-//testmethod();
-//		 deal.Shuffle(Cards)";
-	}
-//	public void testmethod()
-//	{
-//		int i =0;
-//		for (Card card: Cards) {
-//			System.out.print(card.getName() + " Indexofcard:" + i + "\n");
-//			i++;
-//
-//		}
-//	}
+
 
 	
 }
