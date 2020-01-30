@@ -7,11 +7,6 @@ public class Main {
 		dealer.Shuffle(deck.Cards);
 		dealer.Deal();
 		dealer.StartGame();
-		
-		
-		
-		
-		
 
 	}
 
